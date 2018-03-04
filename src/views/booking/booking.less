@@ -1,0 +1,225 @@
+#booking_index {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 121px;
+  border-top: 1px solid #cacaca;
+
+  .date-block {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .booking-list-block {
+    width: 590px;
+    background: #eee;
+    padding: 16px 20px 6px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #666666;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    .list-title {
+      display: flex;
+      justify-content: space-between;
+      background: #f5f5f5;
+      width: 550px;
+      height: 40px;
+      border: 1px solid #cacaca;
+      border-radius: 4px 4px 0 0;
+      line-height: 40px;
+      padding: 0 20px;
+    }
+    .list-content {
+      flex: 1;
+      border: 1px solid #cacaca;
+      border-top: none;
+      background: #fff;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        width: 548px;
+        height: 53px;
+        border-bottom: 1px solid #cacaca;
+        line-height: 53px;
+        padding: 0 20px;
+      }
+    }
+    .create-btn {
+      margin-top: 16px;
+      width: 548px;
+      height: 44px;
+      background: #8e729d;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 44px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .dishes-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 730px;
+    right: 0;
+    border-left: 1px solid #cacaca;
+
+    .ant-tabs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .ant-tabs-bar {
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .ant-tabs-nav-container {
+      margin-bottom: 0;
+    }
+
+    .ant-tabs-vertical .ant-tabs-nav {
+      margin-left: 0;
+    }
+    .ant-tabs-nav .ant-tabs-tab {
+      color: #666;
+      font-size: 18px;
+      line-height: 40px;
+      height: 50px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: #8e729d;
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      color: #8e729d;
+    }
+    .ant-tabs-ink-bar {
+      background: #8e729d;
+    }
+    .ant-tabs-tab-prev-icon {
+      top: 6px;
+    }
+    .ant-tabs-tab-next-icon {
+      top: 6px;
+    }
+    .ant-tabs-content {
+      flex: 1;
+    }
+
+    .desk-block {
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+    }
+    .desk-item {
+      background: #8e729d;
+      border: 1px solid #6d527b;
+      border-radius: 4px;
+      width: 136px;
+      height: 90px;
+      position: relative;
+      overflow: hidden;
+      margin-left: 18px;
+      margin-top: 15px;
+
+      .title {
+        height: 60px;
+        padding: 6px 0 0px 10px;
+
+        &::before {
+          display: none;
+          content: '已预订';
+          font-size: 10px;
+          color: #ffffff;
+          background: rgba(0, 0, 0, 0.3);
+          width: 70px;
+          height: 30px;
+          transform: rotate(28deg);
+          transform-origin: right 44px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          line-height: 44px;
+          text-align: center;
+          padding-left: 8px;
+        }
+        &.booked::before {
+          display: block;
+        }
+        .big {
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 28px;
+          padding-right: 28px;
+        }
+        .small {
+          font-size: 12px;
+          color: #ffffff;
+          line-height: 14px;
+          padding-right: 28px;
+        }
+        div {
+          display: flex;
+          font-size: 16px;
+          color: #ffffff;
+          line-height: 20px;
+          justify-content: flex-start;
+          margin-top: 4px;
+          .overtime {
+            position: relative;
+            top: 2px;
+            display: block;
+            width: 26px;
+            height: 15px;
+            background: #f65757;
+            border-radius: 4px;
+            font-size: 10px;
+            color: #ffffff;
+            line-height: 15px;
+            text-align: center;
+          }
+          .leave {
+            text-align: center;
+            position: relative;
+            top: 2px;
+            display: block;
+            width: 26px;
+            height: 15px;
+            background: #28afff;
+            border-radius: 4px;
+            font-size: 10px;
+            color: #ffffff;
+            line-height: 15px;
+          }
+          span:nth-child(2) {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .content {
+        border-radius: 0 0 4px 4px;
+        height: 28px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px;
+        font-size: 16px;
+        color: #8e729d;
+        line-height: 28px;
+      }
+    }
+  }
+}

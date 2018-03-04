@@ -1,0 +1,19 @@
+.datepicker{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 490px;
+	border-radius: 4px;
+}
+
+.datepicker-modal{
+	z-index: 1100;
+}
+.datepicker .datepicker-navbar-btn{
+	font-size: 20px;
+	color: #8E729D;
+	text-decoration: none;
+}
+.datepicker.ios .datepicker-navbar-btn {
+   color: #8E729D;
+}

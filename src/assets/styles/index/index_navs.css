@@ -1,0 +1,27 @@
+#deskNav {
+  width: 100%;
+  line-height: 75px;
+  box-sizing: border-box;
+   text-align: center;
+  display: flex;
+  justify-content: space-between; }
+  #deskNav a {
+    font-size: 24px;
+    color: #383838;
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    position: relative; }
+    #deskNav a.empty {
+      cursor: default;
+    }
+    #deskNav a i {
+      font-size: 40px;
+      margin-right: 20px;
+      color: #8E729D;
+      vertical-align: middle; }
+    #deskNav a:hover {
+      color: #8E729D; }
+  #deskNav .active {
+    background: #F4EBFB;
+    color: #8E729D; }
